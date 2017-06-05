@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AddPostActivity"></activity>
+        <activity android:name=".ui.AddPostActivity" />
+        <activity android:name=".ui.PostDetailActivity"></activity>
     </application>
 
 </manifest>
