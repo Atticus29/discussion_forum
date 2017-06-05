@@ -14,14 +14,14 @@ public class Post {
 
     public Post() {}
 
-    public Post(String userId, String title, String content, String imageURL, int upCount, int downCount, ArrayList<String> commentIDs) {
-        this.userID = userID;
+    public Post(String title, String content, String imageURL) {
+//        this.userID = userID;
         this.title = title;
         this.content = content;
         this.imageURL = imageURL;
-        this.upCount = upCount;
-        this.downCount = downCount;
-        this.commentIDs = commentIDs;
+        this.upCount = 0;
+        this.downCount = 0;
+//        this.commentIDs = commentIDs;
     }
 
     public String getUserID() {

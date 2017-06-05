@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guest.discussionforum.ui.PostFragment">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/postLinearLayout"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User info"
+            android:textStyle="italic"
+            android:id="@+id/postUserInfo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="20sp"
+            android:id="@+id/postTitle"/>
+
+        <TextView
+            android:id="@+id/postContent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Lorem ipsum"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ContentURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            android:layout_weight="0.19" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_up_circle_black_24dp"
+                android:id="@+id/postUpVote"
+                android:layout_weight="1"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down_circle_black_24dp"
+                android:id="@+id/postDownVote"
+                android:layout_weight="1"
+                android:gravity="center">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment_black_24dp"
+                android:id="@+id/postComment"
+                android:layout_weight="1"
+                android:gravity="center">
+            </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
