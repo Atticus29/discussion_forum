@@ -29,31 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
     @Bind(R.id.addPostButton) FloatingActionButton mAddPostButton;
-
-//    private FirebasePostViewHolderAdapter adapter;
     private FirebaseRecyclerAdapter firebaseAdapter;
-//    public ArrayList<Post> mPosts;
     private DatabaseReference postReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-//        mPostReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                for(DataSnapshot postSnapshot: dataSnapshot.getChildren()){
-//                    Post currentPost = (Post) postSnapshot.getValue();
-//                    Log.d("name", currentPost.getTitle());
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

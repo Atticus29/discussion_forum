@@ -1,5 +1,6 @@
 package com.example.guest.discussionforum.ui;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,7 +46,8 @@ public class AddPostActivity extends AppCompatActivity implements View.OnClickLi
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_POSTS);
             postReference.push().setValue(newPost);
-            Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(AddPostActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 }

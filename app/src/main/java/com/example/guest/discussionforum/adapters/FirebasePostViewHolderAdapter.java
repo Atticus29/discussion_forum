@@ -61,19 +61,14 @@ public class FirebasePostViewHolderAdapter extends RecyclerView.ViewHolder imple
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()){
                     posts.add(snapshot.getValue(Post.class));
                 }
-
                 int itemPosition = getLayoutPosition();
-
                 Intent intent = new Intent(context, PostDetailActivity.class);
                 intent.putExtra("position", itemPosition+"");
                 intent.putExtra("posts", Parcels.wrap(posts));
-
                 context.startActivity(intent);
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
             }
         });
     }
