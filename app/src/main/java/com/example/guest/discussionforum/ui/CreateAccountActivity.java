@@ -51,7 +51,7 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
     }
 
     private void createAuthProgressDialog(){
-        mAuthProgressDialog = new ProgressDialog(this);
+        mAuthProgressDialog = new ProgressDialog(this, R.style.ProThemeOrange);
         mAuthProgressDialog.setTitle("Loading...");
         mAuthProgressDialog.setMessage("Authenticating ...");
         mAuthProgressDialog.setCancelable(false);
